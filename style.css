@@ -67,7 +67,7 @@ img {
 }
 
 .door {
-  background-color: #61412D;
+  background-color: #0091ff;
   height: 100%;
   width: 50%;
   position: absolute;
@@ -123,10 +123,12 @@ img {
 /* Door swing effect */
 .wrapper:hover #left-door{
   transform: rotateY(-140deg);
+  transition: transform 2s ease-in-out;
 }
 
 .wrapper:hover #right-door{
   transform: rotateY(140deg);
+  transition: transform 2s ease-in-out;
 }
 
 #insideCard {
