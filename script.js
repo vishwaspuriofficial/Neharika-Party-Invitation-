@@ -12,8 +12,12 @@
 
 function RSVP() {
   let person = prompt("Please Enter Your Name to RSVP:");
-  if (person != null || person != "") {
+  if (person=="") {
+    alert("Empty")
+    return
+  }
     //show success banner
+    alert(person)
           let params = {
       user_id: 'YGmp4QGAcWQ3Zy0M-',
       service_id: 'service_uydwywr',
@@ -36,6 +40,7 @@ function RSVP() {
     .then((httpResponse) => {
         if (httpResponse.ok) {
             console.log('Your mail is sent!');
+          alert("Congratulations! You have successfully RSVP fo the party! Remember to dress according to the weather as its an outdoor party!");
         } else {
             return httpResponse.text()
               .then(text => Promise.reject(text));
@@ -44,7 +49,7 @@ function RSVP() {
     .catch((error) => {
         console.log('Oops... ' + error);
     });
-
+  }
             
     // emailjs.sendForm('neharika_rsvp', 'rsvp_email', params, 'YGmp4QGAcWQ3Zy0M-')
     //   .then((result) => {
@@ -54,11 +59,10 @@ function RSVP() {
     //   });
       
 
-    alert("Congratulations! You have successfully RSVP fo the party! Remember to dress according to the weather as its an outdoor party!");
     // npm install @emailjs/browser --save
-  }
+
   
-}
+
 
 
 function playSound() {
