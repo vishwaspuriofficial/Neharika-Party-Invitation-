@@ -16,15 +16,15 @@ function RSVP() {
     return
   }
     //show success banner
-    alert(person)
-      //     let params = {
-      // user_id: 'YGmp4QGAcWQ3Zy0M-',
-      // service_id: 'service_uydwywr',
-      // template_id: 'template_0eiwk2o',
-      // template_params: {
-      //   name: person
-      // }
-      //     }
+    // alert(person)
+          let params = {
+      user_id: 'YGmp4QGAcWQ3Zy0M-',
+      service_id: 'service_uydwywr',
+      template_id: 'template_0eiwk2o',
+      template_params: {
+        name: person
+      }
+          }
       let headers = {
       'Content-type': 'application/json'
   };
