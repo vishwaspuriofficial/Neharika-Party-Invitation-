@@ -9,13 +9,9 @@ footer {
   color: white;
   text-align: center;
   font-size: 4vw;
-  margin-bottom:0;
+  margin-bottom:62px;
 /*   margin-bottom: 7vh; */
 }
-
-
-
-
 
 /* General Style */
 * {
@@ -126,27 +122,59 @@ img {
   overflow: hidden
 }
 
-@media (max-width:325px) {
-#card {
-width: 166vw;
-height: 100vh;
-margin-left:-35vw;
-position: absolute;
-}
-  .dir {
-  position: absolute;
-  top: 54vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
   .rsvp {
   position: absolute;
-  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (max-width:330px) {
+  .rsvp {
+    top: 70.5vh;
+  }
 }
-@media (min-width:325px) {
+
+@media (min-width:330px) and (max-width:340px) {
+  .rsvp {
+    top: 72.5vh;
+  }
+}
+
+@media (min-width:340px) and (max-width:350px) {
+  .rsvp {
+    top: 74.5vh;
+  }
+}
+
+
+@media (min-width:350px) and (max-width:360px) {
+  .rsvp {
+    top: 75.5vh; 
+  }
+}
+/*Neha Screen Size */
+@media (min-width:360px) and (max-width:370px) {
+  .rsvp {
+    top: 74.5vh;
+  }
+}
+
+@media (min-width:370px) and (max-width:380px) {
+  .rsvp {
+    top: 75vh;
+  }
+}
+
+@media (min-width:380px) {
+  .rsvp {
+    top: 75vh;
+  }
+}
+
+
+
+
+/* @media (min-width:330px) and (max-width:345px) {
 #card {
 width: 166vw;
 height: 105vh;
@@ -161,7 +189,37 @@ position: absolute;
 }
   .rsvp {
   position: absolute;
-  top: 75vh;
+  top: 76vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+} */
+
+@media (min-width:345px) {
+#card {
+width: 166vw;
+height: 105vh;
+margin-left:-35vw;
+position: absolute;
+}
+  .dir {
+  position: absolute;
+  top: 57vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+}
+@media (max-width:330px) {
+#card {
+width: 166vw;
+height: 100vh;
+margin-left:-35vw;
+position: absolute;
+}
+  .dir {
+  position: absolute;
+  top: 54vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
